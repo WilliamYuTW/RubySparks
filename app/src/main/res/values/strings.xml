@@ -1,6 +1,5 @@
 <resources>
-    <!-- TODO (Change App Name -->
-    <string name="app_name">AndroidTemplate</string>
+    <string name="app_name">Ruby Sparks</string>
     <string name="title_activity_main">MainActivity</string>
     <!--
     This string is used for square devices and overridden by hello_world in

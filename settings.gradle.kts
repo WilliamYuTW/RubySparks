@@ -1,3 +1,2 @@
 include(":app")
-// TODO (Change project name)
-rootProject.name = "AndroidTemplate"
+rootProject.name = "RubySparks"

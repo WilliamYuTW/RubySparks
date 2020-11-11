@@ -1,4 +1,4 @@
-package com.will.androidtemplate
+package com.will.rubysparks
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

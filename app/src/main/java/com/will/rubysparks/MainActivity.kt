@@ -1,4 +1,4 @@
-package com.will.androidtemplate
+package com.will.rubysparks
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

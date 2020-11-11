@@ -3,7 +3,6 @@
  * @date 2020-11-04
  */
 
-// TODO (run "./gradlew dependencyUpdates" to check library version)
 object Versions {
     const val gradle = "4.1.0"
     const val material = "1.2.1"

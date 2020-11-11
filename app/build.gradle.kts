@@ -78,6 +78,14 @@ dependencies {
     kapt(Libs.Hilt.hiltCompiler)
     kapt(Libs.Hilt.hiltAndroidCompiler)
 
+    implementation(Libs.Network.Retrofit.retrofit)
+    implementation(Libs.Network.Retrofit.coroutinesAdapter)
+    implementation(Libs.Network.Retrofit.moshiConverter)
+    implementation(Libs.Network.OkHttp.okHttp)
+    implementation(Libs.Network.OkHttp.httpLoggingInterceptor)
+    implementation(Libs.Network.Moshi.moshi)
+    implementation(Libs.Network.Moshi.moshiKotlin)
+
     implementation(Libs.ThirdPartyLib.timber)
     implementation(Libs.ThirdPartyLib.mmkv)
 

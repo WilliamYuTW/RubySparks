@@ -26,6 +26,18 @@ object Versions {
     const val hiltAndroid = "2.28-alpha"
     //endregion
 
+    //region Network
+    const val retrofit = "2.7.0"
+    const val moshiConverter = "2.7.0"
+    const val coroutinesAdapter = "0.9.2"
+
+    const val okHttp = "4.2.2"
+    const val httpLoggingInterceptor = "4.2.2"
+
+    const val moshi = "1.8.0"
+    const val moshiKotlin = "1.8.0"
+    //endregion
+
     //region Third-Party
     const val timber = "4.7.1"
     const val mmkv = "1.2.4"

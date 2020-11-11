@@ -19,6 +19,10 @@ android {
 
         testInstrumentationRunner = "AndroidX.test.runner.AndroidJUnitRunner"
 
+        buildConfigField("String", "TMDB_API_KEY", ApiKeys.TMDB_API_KEY)
+        buildConfigField("String", "TMDB_BASE_URL", ApiConfigs.TMDB_BASE_URL)
+        buildConfigField("String", "TMDB_IMAGE_URL", ApiConfigs.TMDB_IMAGE_URL)
+
         /**
          * Uncomment the following line if your minSdk is lower than API 21,
          * and use `app:srcCompat` instead of `android:src` for ImageView

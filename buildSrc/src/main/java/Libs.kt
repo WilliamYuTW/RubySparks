@@ -46,8 +46,6 @@ object Libs {
             const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
             const val moshiConverter =
                 "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}"
-            const val coroutinesAdapter =
-                "coroutinesAdapter: 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:'${Versions.coroutinesAdapter}"
         }
 
         object OkHttp {

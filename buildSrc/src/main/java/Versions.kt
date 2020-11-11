@@ -29,7 +29,6 @@ object Versions {
     //region Network
     const val retrofit = "2.7.0"
     const val moshiConverter = "2.7.0"
-    const val coroutinesAdapter = "0.9.2"
 
     const val okHttp = "4.2.2"
     const val httpLoggingInterceptor = "4.2.2"

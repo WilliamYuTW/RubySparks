@@ -79,7 +79,6 @@ dependencies {
     kapt(Libs.Hilt.hiltAndroidCompiler)
 
     implementation(Libs.Network.Retrofit.retrofit)
-    implementation(Libs.Network.Retrofit.coroutinesAdapter)
     implementation(Libs.Network.Retrofit.moshiConverter)
     implementation(Libs.Network.OkHttp.okHttp)
     implementation(Libs.Network.OkHttp.httpLoggingInterceptor)

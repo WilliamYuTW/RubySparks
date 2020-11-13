@@ -19,10 +19,6 @@ android {
 
         testInstrumentationRunner = "AndroidX.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "TMDB_API_KEY", ApiKeys.TMDB_API_KEY)
-        buildConfigField("String", "TMDB_BASE_URL", ApiConfigs.TMDB_BASE_URL)
-        buildConfigField("String", "TMDB_IMAGE_URL", ApiConfigs.TMDB_IMAGE_URL)
-
         /**
          * Uncomment the following line if your minSdk is lower than API 21,
          * and use `app:srcCompat` instead of `android:src` for ImageView
@@ -58,6 +54,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":tmdbsdk"))
+
     implementation(Libs.Kotlin.stdLib)
     implementation(Libs.Kotlin.coroutinesCore)
     implementation(Libs.Kotlin.coroutinesAndroid)
@@ -77,13 +75,6 @@ dependencies {
     implementation(Libs.Hilt.hiltViewModel)
     kapt(Libs.Hilt.hiltCompiler)
     kapt(Libs.Hilt.hiltAndroidCompiler)
-
-    implementation(Libs.Network.Retrofit.retrofit)
-    implementation(Libs.Network.Retrofit.moshiConverter)
-    implementation(Libs.Network.OkHttp.okHttp)
-    implementation(Libs.Network.OkHttp.httpLoggingInterceptor)
-    implementation(Libs.Network.Moshi.moshi)
-    implementation(Libs.Network.Moshi.moshiKotlin)
 
     implementation(Libs.ThirdPartyLib.timber)
     implementation(Libs.ThirdPartyLib.mmkv)

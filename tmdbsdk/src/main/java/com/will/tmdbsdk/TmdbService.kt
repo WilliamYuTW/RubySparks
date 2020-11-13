@@ -1,6 +1,8 @@
-package com.will.rubysparks.data
+package com.will.tmdbsdk
 
-import com.will.rubysparks.BuildConfig
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import com.will.tmdbsdk.data.PopularMovieResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import okhttp3.logging.HttpLoggingInterceptor.Level.BASIC
@@ -16,7 +18,7 @@ import retrofit2.http.GET
 /**
  * [API doc](https://developers.themoviedb.org/3/movies)
  */
-interface TmdbService { // TODO (Extract to a independent module?)
+interface TmdbService {
     @GET("movie/popular")
     suspend fun getPopularMovies(): PopularMovieResponse
 
@@ -37,7 +39,11 @@ interface TmdbService { // TODO (Extract to a independent module?)
                 }
                 .build()
 
-            val moshiConverter = MoshiConverterFactory.create()
+            val moshiConverter = MoshiConverterFactory.create(
+                Moshi.Builder()
+                    .add(KotlinJsonAdapterFactory())
+                    .build()
+            )
 
             return Retrofit.Builder()
                 .client(okHttpClient)

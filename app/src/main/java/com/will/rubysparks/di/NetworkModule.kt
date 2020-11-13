@@ -1,6 +1,6 @@
 package com.will.rubysparks.di
 
-import com.will.rubysparks.data.TmdbService
+import com.will.tmdbsdk.TmdbService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

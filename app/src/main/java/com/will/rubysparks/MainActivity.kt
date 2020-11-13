@@ -2,7 +2,7 @@ package com.will.rubysparks
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.will.rubysparks.data.TmdbService
+import com.will.tmdbsdk.TmdbService
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

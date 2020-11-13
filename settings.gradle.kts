@@ -1,2 +1,2 @@
-include(":app")
+include(":tmdbsdk", ":app")
 rootProject.name = "RubySparks"

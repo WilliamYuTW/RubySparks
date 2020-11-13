@@ -27,14 +27,14 @@ object Versions {
     //endregion
 
     //region Network
-    const val retrofit = "2.7.0"
-    const val moshiConverter = "2.7.0"
+    const val retrofit = "2.9.0"
+    const val moshiConverter = "2.9.0"
 
-    const val okHttp = "4.2.2"
-    const val httpLoggingInterceptor = "4.2.2"
+    const val okHttp = "4.9.0"
+    const val httpLoggingInterceptor = "4.9.0"
 
     const val moshi = "1.8.0"
-    const val moshiKotlin = "1.8.0"
+    const val moshiKotlin = "1.11.0"
     //endregion
 
     //region Third-Party

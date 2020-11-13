@@ -1,4 +1,4 @@
-package com.will.rubysparks.data
+package com.will.tmdbsdk.data
 
 import com.squareup.moshi.Json
 

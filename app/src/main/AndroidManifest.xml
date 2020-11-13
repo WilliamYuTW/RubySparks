@@ -13,12 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RubySparks">
-        <activity
-            android:name="com.will.rubysparks.MainActivity"
-            android:label="@string/title_activity_main">
+        <activity android:name="com.will.rubysparks.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

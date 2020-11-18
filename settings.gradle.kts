@@ -1,3 +1,2 @@
-include(":app")
-// TODO (Change project name)
-rootProject.name = "AndroidTemplate"
+include(":tmdbsdk", ":app")
+rootProject.name = "RubySparks"

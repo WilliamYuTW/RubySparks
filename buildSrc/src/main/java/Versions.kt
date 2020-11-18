@@ -3,7 +3,6 @@
  * @date 2020-11-04
  */
 
-// TODO (run "./gradlew dependencyUpdates" to check library version)
 object Versions {
     const val gradle = "4.1.0"
     const val material = "1.2.1"
@@ -25,6 +24,17 @@ object Versions {
     //region Hilt
     const val hilt = "1.0.0-alpha01"
     const val hiltAndroid = "2.28-alpha"
+    //endregion
+
+    //region Network
+    const val retrofit = "2.9.0"
+    const val moshiConverter = "2.9.0"
+
+    const val okHttp = "4.9.0"
+    const val httpLoggingInterceptor = "4.9.0"
+
+    const val moshi = "1.8.0"
+    const val moshiKotlin = "1.11.0"
     //endregion
 
     //region Third-Party

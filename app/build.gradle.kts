@@ -64,7 +64,8 @@ dependencies {
 
     implementation(Libs.AndroidX.coreKtx)
     implementation(Libs.AndroidX.appcompat)
-    implementation(Libs.AndroidX.lifecycleExt)
+    implementation(Libs.AndroidX.viewModelExt)
+    implementation(Libs.AndroidX.liveDataExt)
     implementation(Libs.AndroidX.constraintLayout)
     implementation(Libs.AndroidX.navigationFragment)
     implementation(Libs.AndroidX.navigationUI)

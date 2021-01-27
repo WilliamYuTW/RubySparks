@@ -15,7 +15,7 @@ object Versions {
     //region AndroidX
     const val coreKtx = "1.3.2"
     const val appcompat = "1.2.0"
-    const val lifecycleExt = "2.2.0"
+    const val lifecycle = "2.2.0"
     const val constraintLayout = "2.0.4"
     const val navigation = "2.3.1"
     const val room = "2.2.5"

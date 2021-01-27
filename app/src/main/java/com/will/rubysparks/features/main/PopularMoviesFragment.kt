@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.will.rubysparks.R
 import dagger.hilt.android.AndroidEntryPoint
-import timber.log.Timber
+import kotlinx.android.synthetic.main.fragment_popular_movies.*
 
 @AndroidEntryPoint
 class PopularMoviesFragment : Fragment() {
@@ -25,8 +25,11 @@ class PopularMoviesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val adapter = PopularMoviesAdapter()
+        popularMovieList.adapter = adapter
+
         viewModel.popularMovies.observe(viewLifecycleOwner) {
-            Timber.d(it.toString())
+            adapter.submitList(it)
         }
     }
 }

@@ -5,7 +5,7 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.will.tmdbsdk.data.PopularMovieResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import okhttp3.logging.HttpLoggingInterceptor.Level.BASIC
+import okhttp3.logging.HttpLoggingInterceptor.Level.BODY
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
@@ -24,7 +24,7 @@ interface TmdbService {
 
     companion object {
         fun create(): TmdbService {
-            val logger = HttpLoggingInterceptor().apply { level = BASIC }
+            val logger = HttpLoggingInterceptor().apply { level = BODY }
 
             val okHttpClient = OkHttpClient.Builder()
                 .addInterceptor(logger)

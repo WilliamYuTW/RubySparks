@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             val popularMovies = withContext(Dispatchers.IO) {
                 tmdbService.getPopularMovies()
             }
-            print(popularMovies.results.toString())
         }
     }
 }
